@@ -1,0 +1,114 @@
+.footer {
+  background-color: #dbe8f1;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  background-image: -moz-linear-gradient(#7f8397, #comments);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    font-weight: 700;
+  }
+
+  &__nav a {
+    color: #185aa6;
+    text-decoration: none;
+    transition: color 0.3s ease-in;
+    color: #2f76c7;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__social-link {
+    color: #2f76c7;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  &__bottom {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #2f76c7;
+  }
+
+  // Медіа-запити для адаптивності
+
+  @media (max-width: 1024px) {
+    .footer__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__logo {
+      margin-bottom: 20px;
+    }
+
+    .footer__nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer__social {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer__container {
+      padding: 0 15px;
+    }
+
+    .footer__logo {
+      font-size: 1.2rem;
+    }
+
+    .footer__nav ul {
+      gap: 15px;
+    }
+
+    .footer__bottom {
+      font-size: 0.8rem;
+      color: #2f76c7;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer__logo {
+      font-size: 1rem;
+    }
+
+    .footer__nav ul {
+      gap: 10px;
+    }
+
+    .footer__bottom {
+      font-size: 0.7rem;
+      color: #2f76c7;
+    }
+  }
+}

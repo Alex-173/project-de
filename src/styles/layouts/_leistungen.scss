@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #2f76c7;
+  text-align: center;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.filters {
+  margin-bottom: 20px;
+}
+select {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  border: 2px solid #2f76c7;
+  border-radius: 5px;
+  color: #6b3838;
+}
+.service-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 10px;
+    background: #2f76c7;
+    color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: #6b3838;
+    }
+    .company-info {
+      display: none;
+      background: white;
+      color: black;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #2f76c7;
+    }
+  }
+}

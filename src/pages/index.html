@@ -1,0 +1,140 @@
+!<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дортмунд</title>
+    <link rel="stylesheet" href="../Style/scss/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div>
+          <a class="header__logo" href="/">
+            <img src="../media/LOGO.png" alt="Логотип- ua-in.de" />
+          </a>
+        </div>
+        <ul class="header__menu">
+          <li class="header__nav">
+            <a class="header__link" href="../sites/golovna.html">Головна</a>
+          </li>
+          <li>
+            <a class="header__link" href="#">Послуги</a>
+          </li>
+          <li>
+            <a class="header__link" href="#">Місцеві заходи</a>
+          </li>
+          <li>
+            <a class="header__link" href="#">Волонтерська допомога</a>
+          </li>
+          <li>
+            <a class="header__link" href="#">Міста</a>
+          </li>
+        </ul>
+
+        <div class="header__icons">
+          <a href="">
+            <svg class="header__icon">
+              <use href="../icons/symbol-defs.svg#icon-facebook2"></use>
+            </svg>
+          </a>
+
+          <a href="">
+            <svg class="header__icon">
+              <use href="../icons/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+
+        <button class="header__burger-btn mob-menu-btn-open" type="button">
+          <svg class="header__icon-burger-menu" width="20" height="14">
+            <use href="../media/icons.svg#_iconburger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <section
+      class="hero"
+      style="background-image: url('../media/sity/Dortmund.jpg')"
+    >
+      <div class="hero__content">
+        <h1 class="hero__title">Dortmund</h1>
+        <p class="hero__description"></p>
+        <button class="hero__button" id="openModal">Твоє місто</button>
+      </div>
+    </section>
+
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <span class="modal__close" id="closeModal">&times;</span>
+        <h2>Вибери своє місто</h2>
+        <ul class="modal__list">
+          <li>
+            <a href="https://uk.wikipedia.org/wiki/Dortmund" target="_blank"
+              >Дортмунд</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://de.wikipedia.org/wiki/D%C3%BCsseldorf"
+              target="_blank"
+              >Дюсельдорф</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Berlin" target="_blank"
+              >Берлін</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Hamburg" target="_blank"
+              >Гамбург</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Munich" target="_blank"
+              >Мюнхен</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Cologne" target="_blank"
+              >Кельн</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Frankfurt" target="_blank"
+              >Франкфурт</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <a class="header__logo" href="/">
+            <img src="../media/LOGO.png" alt="Логотип- ua-in.de" />
+          </a>
+        </div>
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">Facebook</a>
+          <a href="#" class="footer__social-link">Instagram</a>
+          <a href="#" class="footer__social-link">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Всі права захищені</p>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/hero.js"></script>
+</html>

@@ -1,0 +1,14 @@
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/footer";
+@import "./layouts/news-slider";
+@import "./layouts/topics";
+@import "./layouts/leistungen";
+@import "./components/search";
+
+body {
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}

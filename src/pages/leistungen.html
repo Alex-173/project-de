@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Послуги українців у Німеччині</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <div>
+          <a class="header__logo" href="/">
+            <img src="/public/images/LOGO.png" alt="Логотип - ua-in.de" />
+          </a>
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li>
+              <a class="header__link" href="/index.html">Головна</a>
+            </li>
+            <li><a class="header__link" href="#">Новини</a></li>
+            <li>
+              <a class="header__link" href="/sites/leistungen.html">Довідник</a>
+            </li>
+            <li><a class="header__link" href="#">Заходи</a></li>
+            <li><a class="header__link" href="#">Благодійність</a></li>
+          </ul>
+        </nav>
+        <button class="hero__button" id="openModal">Твоє місто</button>
+        <div class="header__icons">
+          <a href="#">
+            <svg class="header__icon">
+              <use href="/public/icons/symbol-defs.svg#icon-facebook2"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="header__icon">
+              <use href="/public/icons/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Бургер-кнопка -->
+        <button class="header__burger-btn" type="button">
+          <svg class="header__icon-burger-menu" width="30" height="30">
+            <use href="../icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Мобільне меню (модальне вікно) -->
+      <div class="mobile-menu">
+        <button class="mobile-menu__close">&times;</button>
+        <ul class="mobile-menu__list">
+          <li>
+            <a class="mobile-menu__link" href="./index.html">Головна</a>
+          </li>
+          <li><a class="mobile-menu__link" href="#">Новини</a></li>
+          <li>
+            <a class="mobile-menu__link" href="./sites/leistungen.html"
+              >Довідник</a
+            >
+          </li>
+          <li><a class="mobile-menu__link" href="#">Заходи</a></li>
+          <li><a class="mobile-menu__link" href="#">Біженці</a></li>
+        </ul>
+        <button class="hero__button" id="openModal">Твоє місто</button>
+        <div class="mobile-menu__icons">
+          <a href="#">
+            <svg class="header__icon">
+              <use href="./icons/symbol-defs.svg#icon-facebook2"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="header__icon">
+              <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Українські послуги у Німеччині</h1>
+      <div class="filters">
+        <select id="cityFilter">
+          <option value="">Оберіть місто</option>
+          <option value="Берлін">Берлін</option>
+          <option value="Мюнхен">Мюнхен</option>
+          <option value="Гамбург">Гамбург</option>
+          <option value="Кельн">Кельн</option>
+          <option value="Франкфурт">Франкфурт</option>
+          <option value="Штутгарт">Штутгарт</option>
+        </select>
+        <select id="serviceFilter">
+          <option value="">Оберіть послугу</option>
+          <option value="Косметологічні послуги">Косметологічні послуги</option>
+          <option value="Лікарі">Лікарі</option>
+          <option value="Будівельні роботи">Будівельні роботи</option>
+        </select>
+      </div>
+      <ul class="service-list">
+        <li data-city="Берлін" data-service="Косметологічні послуги">
+          <h3>Косметолог у Берліні</h3>
+          <div class="company-info">
+            <div class="company-card">
+              <h2>DMK Kosmetikerin Svitlana Gerts</h2>
+              <p>
+                <strong>Telefon:</strong> +49 176 56849410<br />
+                <strong>E-Mail:</strong> svgertss@gmail.com<br />
+                <strong>Адреса:</strong> Swinemünder Str. 106, 10435 Berlin<br />
+                <strong>Web-сайт:</strong>
+                <a href="https://example.com" target="_blank">example.com</a>
+              </p>
+            </div>
+            <div class="company-card">
+              <h2>DMK Kosmetikerin Svitlana Gerts</h2>
+              <p>
+                <strong>Telefon:</strong> +49 176 56849410<br />
+                <strong>E-Mail:</strong> svgertss@gmail.com<br />
+                <strong>Адреса:</strong> Swinemünder Str. 106, 10435 Berlin<br />
+                <strong>Web-сайт:</strong>
+                <a href="https://example.com" target="_blank">example.com</a>
+              </p>
+            </div>
+            <div class="company-card">
+              <h2>DMK Kosmetikerin Svitlana Gerts</h2>
+              <p>
+                <strong>Telefon:</strong> +49 176 56849410<br />
+                <strong>E-Mail:</strong> svgertss@gmail.com<br />
+                <strong>Адреса:</strong> Swinemünder Str. 106, 10435 Berlin<br />
+                <strong>Web-сайт:</strong>
+                <a href="https://example.com" target="_blank">example.com</a>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li data-city="Мюнхен" data-service="Лікарі">
+          <h3>Лікар у Мюнхені</h3>
+          <div class="company-card">
+            <p>Кваліфікований лікар у Мюнхені допоможе вам з консультацією.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="../scripts/leistungen.js"></script>
+    <script src="../scripts/sity.js"></script>
+  </body>
+</html>

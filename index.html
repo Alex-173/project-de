@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ГОЛОВНА СТОРІНКА/Українці в Німеччині</title>
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <div>
+          <a class="header__logo" href="/">
+            <img src="./public/images/LOGO.png" alt="Логотип - ua-in.de" />
+          </a>
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li>
+              <a class="header__link" href="/index.html">Головна</a>
+            </li>
+            <li><a class="header__link" href="#">Новини</a></li>
+            <li>
+              <a class="header__link" href="src/pages/leistungen.html"
+                >Довідник</a
+              >
+            </li>
+            <li><a class="header__link" href="#">Заходи</a></li>
+            <li><a class="header__link" href="#">Благодійність</a></li>
+          </ul>
+        </nav>
+        <button class="hero__button" id="openModal">Твоє місто</button>
+        <div class="header__icons">
+          <a href="#">
+            <svg class="header__icon">
+              <use href="/public/icons/symbol-defs.svg#icon-facebook2"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="header__icon">
+              <use href="/public/icons/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Бургер-кнопка -->
+        <button class="header__burger-btn" type="button">
+          <svg class="header__icon-burger-menu" width="30" height="30">
+            <use href="/public/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Мобільне меню (модальне вікно) -->
+      <div class="mobile-menu">
+        <button class="mobile-menu__close">&times;</button>
+        <ul class="mobile-menu__list">
+          <li>
+            <a class="mobile-menu__link" href="./index.html">Головна</a>
+          </li>
+          <li><a class="mobile-menu__link" href="#">Новини</a></li>
+          <li>
+            <a class="mobile-menu__link" href="">Довідник</a>
+          </li>
+          <li><a class="mobile-menu__link" href="#">Заходи</a></li>
+          <li><a class="mobile-menu__link" href="#">Біженці</a></li>
+        </ul>
+        <button class="hero__button" id="openModal">Твоє місто</button>
+        <div class="mobile-menu__icons">
+          <a href="#">
+            <svg class="header__icon">
+              <use href="./icons/symbol-defs.svg#icon-facebook2"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="header__icon">
+              <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="hero"
+      style="background-image: url('./public/images/hamburg-3846525_1280.jpg')"
+    >
+      <div class="hero__content">
+        <h1 class="hero__title">Ласкаво просимо</h1>
+        <p class="hero__description"></p>
+
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Пошук на сайті..."
+          />
+          <button id="searchButton" class="search-button">🔍</button>
+        </div>
+      </div>
+    </section>
+    <!--  Стрічка новин -->
+    <section class="news">
+      <div class="slider">
+        <button class="slider__button slider__button--prev" id="prevSlide">
+          &#10094;
+        </button>
+        <div class="slider__wrapper">
+          <div class="slider__track" id="sliderTrack">
+            <div
+              class="slider__item"
+              style="background-image: url('public/images/steuerwechsel.jpg')"
+            >
+              <div class="slider__text">Податкові класи в Німеччині</div>
+            </div>
+            <div class="slider__item" style="background-image: url('img2.jpg')">
+              <div class="slider__text">Центри прийому біженців</div>
+            </div>
+            <div class="slider__item" style="background-image: url('img3.jpg')">
+              <div class="slider__text">Медичне страхування в Німеччині</div>
+            </div>
+            <div class="slider__item" style="background-image: url('img4.jpg')">
+              <div class="slider__text">Пошук роботи</div>
+            </div>
+            <div class="slider__item" style="background-image: url('img5.jpg')">
+              <div class="slider__text">Пошук помешкання</div>
+            </div>
+          </div>
+        </div>
+        <button class="slider__button slider__button--next" id="nextSlide">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <!-- Top-tema -->
+    <section class="topics">
+      <h2>Популярні теми</h2>
+      <div class="topics__grid">
+        <div
+          class="topic"
+          style="background-image: url('public/images/steuerklasse.webp')"
+        >
+          <span class="topic__text">Повернення податків у Німеччині</span>
+        </div>
+        <div
+          class="topic"
+          style="background-image: url('public/images/Krankenversicherung.jpg')"
+        >
+          <span class="topic__text">Медичне страхування</span>
+        </div>
+        <div
+          class="topic topic--hidden"
+          style="background-image: url('public/images/flüchtlingen.jpg')"
+        >
+          <span class="topic__text">Центри прийому біженців</span>
+        </div>
+        <div
+          class="topic topic--hidden"
+          style="background-image: url('public/images/fürerschein.jpg')"
+        >
+          <span class="topic__text">Заміна водійського посвідчення</span>
+        </div>
+        <div
+          class="topic topic--hidden"
+          style="background-image: url('public/images/arbeitssuche.jpg')"
+        >
+          <span class="topic__text">Пошук житла</span>
+        </div>
+        <div
+          class="topic topic--hidden"
+          style="background-image: url('public/images/wohnungsuche.jpg')"
+        >
+          <span class="topic__text">Пошук роботи</span>
+        </div>
+        <div
+          class="topic topic--hidden"
+          style="background-image: url('public/images/reise\ deutscland.jpg')"
+        >
+          <span class="topic__text">Подорожі Німечииною</span>
+        </div>
+        <div
+          class="topic topic--hidden"
+          style="background-image: url('public/images/medicine.jpg')"
+        >
+          <span class="topic__text">Медицина Німеччини</span>
+        </div>
+      </div>
+      <div class="topics__button-container">
+        <a href="more-topics.html" class="topics__button">Переглянути більше</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <a class="header__logo" href="/">
+            <img src="./public/images/LOGO.png" alt="Логотип- ua-in.de" />
+          </a>
+        </div>
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header__icons">
+          <a href="#">
+            <svg class="header__icon">
+              <use href="./public/"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="header__icon">
+              <use href="/public/icons/symbol-defs.svg#icon-facebook2"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="header__icon">
+              <use href="/public/icons/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Всі права захищені</p>
+      </div>
+    </footer>
+
+    <!-- ТВОЄ МІСТО -->
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <span class="modal__close" id="closeModal">&times;</span>
+        <h2>Вибери своє місто</h2>
+        <ul class="modal__list">
+          <li>
+            <a href="src/pages/index.html" target="_blank">Дортмунд</a>
+          </li>
+          <li>
+            <a
+              href="https://de.wikipedia.org/wiki/D%C3%BCsseldorf"
+              target="_blank"
+              >Дюсельдорф</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Berlin" target="_blank"
+              >Берлін</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Hamburg" target="_blank"
+              >Гамбург</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Munich" target="_blank"
+              >Мюнхен</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Cologne" target="_blank"
+              >Кельн</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Frankfurt" target="_blank"
+              >Франкфурт</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="./src/scripts/burger.js"></script>
+  <script src="./src/scripts/sity.js"></script>
+  <script src="./src/scripts/news-slider.js"></script>
+  <script src="./src/scripts/search.js"></script>
+  <script src="./src/scripts/leistungen.js"></script>
+</html>

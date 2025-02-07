@@ -1,0 +1,76 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-image: url(/media/hamburg-3846525_1280.jpg);
+  background-image: linear-gradient(-22px 22px 77px 25px black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 20px;
+
+  color: white;
+  text-align: center;
+
+  &__title {
+    font-size: 54px;
+    text-shadow: gray;
+    font-weight: 700;
+  }
+
+  &__button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #2f76c7;
+    color: #f8f5f5;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  &__content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+  }
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 10px 0;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
